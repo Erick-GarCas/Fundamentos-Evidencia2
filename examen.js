@@ -25,6 +25,14 @@ function evaluacion() {
         }
     }
     // calcular la calificacion
-    let calificacion = (puntaje / totalPreguntas) * 100; //calculo la calificacion en base al puntaje obtenido   
-    alert("Tu calificación es: " + calificacion.toFixed(2)); //muestro la calificacion con 2 decimales
+    let calificacion = (puntaje / totalPreguntas) * 100; //calculo la calificacion en base al puntaje obtenido
+    // Mostrar la calificación con 2 decimales
+    alert("Tu calificación es: " + calificacion.toFixed(2));
+
+    // Mostrar si aprueba o reprueba (>= 70.0 aprueba)
+    if (calificacion >= 70.0) {
+        alert("¡Felicidades! El estudiante aprueba.");
+    } else {
+        alert("Lo siento. El estudiante reprueba.");
+    }
 }
