@@ -1,7 +1,7 @@
 function iniciarCarga() {
-    var btn = document.getElementById('btnCargar');
-    var spinner = document.getElementById('spinner');
-    var resultado = document.getElementById('resultado');
+    let btn = document.getElementById('btnCargar');
+    let spinner = document.getElementById('spinner');
+    let resultado = document.getElementById('resultado');
 
     // Restablecer estado previo
     resultado.style.display = 'none';
@@ -18,4 +18,5 @@ function iniciarCarga() {
         btn.disabled = false;
         btn.textContent = 'Iniciar carga';
     }, 2500);
+
 }
